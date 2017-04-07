@@ -1,6 +1,5 @@
 EXEC = \
-    tests/test-matrix \
-    tests/test-stopwatch
+	tests/test-matrixexpand
 
 GIT_HOOKS := .git/hooks/applied
 OUT ?= .build
@@ -16,8 +15,7 @@ CFLAGS = -Wall -std=gnu99 -g -O2 -I.
 LDFLAGS = -lpthread
 
 OBJS := \
-	stopwatch.o \
-	matrix_naive.o
+	matrix_expansion.o
 
 deps := $(OBJS:%.o=%.o.d)
 OBJS := $(addprefix $(OUT)/,$(OBJS))

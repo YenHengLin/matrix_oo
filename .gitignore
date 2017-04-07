@@ -1,3 +1,4 @@
 .build
 tests/test-matrix
 tests/test-stopwatch
+tests/test-matrixexpand
